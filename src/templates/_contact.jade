@@ -1,0 +1,36 @@
+section.contact(data-section="contact")
+	.contact-bg
+		.container
+			.row.contact__title
+				.col-md-12
+					h2.section-title.light Контакты
+					p.section-discr Не тратьте время на раздумья - просто напишите нам!
+
+			.row.contact-wrap
+				.col-md-8.col-sm-8.contact-form-wrap
+					form.main_form(role="form", action="http://formspree.io/alexi_el@inbox.ru", novalidate, target="_blank", method="post")
+						label.form-group
+							input(type="text", name="name", placeholder="Ваше имя", data-validation-required-message="Вы не ввели имя", required)
+							span.help-block.text-danger
+						label.form-group
+							input(type="email", name="email", placeholder="Ваш емейл", data-validation-required-message="Не корректно введен e-mail", required)
+							span.help-block.text-danger
+						label.form-group
+							textarea(name="massage", placeholder="Ваше сообщение", data-validation-required-message="Вы не ввели сообщение", required)
+							span.help-block.text-danger
+						button Отправить
+					
+				.col-md-4.col-sm-4.contact-form-info
+					ul.info-wrap
+						li.info-item
+							i.fa.fa-map-marker.info-logo--1
+							.info-discr Россия, Москва, ул. Пушкина 12/2
+						li.info-item
+							i.fa.fa-envelope-o.info-logo--2
+							.info-discr bestcompany@gmail.com
+						li.info-item
+							i.fa.fa-phone.info-logo--3
+							.info-discr +7-(927)-444-22-22
+
+
+

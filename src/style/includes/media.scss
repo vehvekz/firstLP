@@ -1,0 +1,100 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.contact-wrap{
+		width: 100%;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.features__explain-discr{
+		padding: 20px 10px;
+	}
+	.services-title{
+		padding: 15px 0 10px;
+	}
+	.download-wrap{
+		width: 95%;
+	}
+	section p.section-discr{
+		width: 100%;
+	}
+	.contact-wrap{
+		width: 100%;
+	}
+	.footer-copy-wrap, .footer-social-wrap{
+		text-align: center;
+	}
+	.team__slider-wrap{
+		width: 90%
+	}
+		.team{
+		padding-bottom: 40px
+	}
+	.toogle_list-wrap .nav__list {
+		margin-top: 40px;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.gallery-item--popup{
+	width: 100%;
+	}
+	.gallery-item--popup .mfp-close{
+	display:none;
+	}
+	.team__slider-wrap{
+		width: 95%
+	}
+	.team{
+		padding-bottom: 30px
+	}
+	.contact-wrap{
+		width: 100%;
+	}
+	.contact-form-wrap{
+		width: 100%;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

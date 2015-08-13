@@ -1,0 +1,231 @@
+// Main Header
+header
+	height: 750px
+	width: 100%
+
+.header__slider-list img
+	display: block
+
+.header__content
+	position: absolute
+	top: 50%
+	margin: -200px auto 0
+	height: 400px
+	width: 100%
+	text-transform: uppercase
+	text-align: center
+	font-family: 'PT Sans Narrow', sans-serif
+	h1
+		margin: 0 0 140px
+		padding: 0
+		font:
+			size: 4em
+			weight: 600
+		letter-spacing: 0.1em
+		color: $titleColor
+	span.header-date
+		font:
+			size: 1.2em
+		color: $titleColor
+		position: relative
+		display: block
+		width: 205px
+		margin: 0 auto 220px
+		&::before, &::after
+			content: ""
+			display: block
+			position: absolute
+			top: 50%
+			margin-bottom: -0.5px
+			width: 40px
+			height: 1px
+			background-color: $titleColor
+		&::before
+			left: -50px
+		&::after
+			right: -50px
+	.link-wrap
+		margin-top: 40px
+		outline: none
+		cursor: pointer
+		span.link-title
+			border: 1px $titleColor solid
+			background-color: transparent
+			padding: 10px 20px
+			color: $titleColor
+			letter-spacing: 0.07em
+			text-transform: uppercase
+			border-radius: 3px
+		i
+			text-align: center
+			display: block
+			margin-top: 20px
+			color: $titleColor
+
+// Navigation main
+.menu-main_wrapper
+	height: 50px
+.main_menu-wrap
+	z-index: 300
+	&.fixed
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		background-color: $titleColor
+		// box-shadow: 0 1px 1px rgba(0, 0, 0, 0.8)
+		transition: all .2s ease-in-out
+	.nav__list
+		width: 100%
+		text-align: center
+		padding: 10px 0
+	.nav__item
+		display: inline-block
+		&.active .nav__item-link
+			color: $accentColor
+	.nav__item-link
+		display: block
+		padding: 5px 10px
+		text-transform: uppercase
+		font:
+			size: 14px
+			weigth: 600
+		color: $menuColor
+		outline: none
+
+
+// Navigation toogle menu
+.toogle_list-wrap
+	position: fixed
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,.85)
+	z-index: 10
+	right: 0
+	top: 0
+	display: none
+
+	.nav__list
+		margin-top: 140px
+		text-align: center
+
+	.nav__item
+		color: #dfe5eb
+		font:
+			weight: 400
+		&:nth-child(1)
+			+animation-delay(0)
+		&:nth-child(2)
+			+animation-delay(.05s)
+		&:nth-child(3)
+			+animation-delay(.1s)
+		&:nth-child(4)
+			+animation-delay(.15s)
+		&:nth-child(5)
+			+animation-delay(.2s)
+		&:nth-child(6)
+			+animation-delay(.25s)
+		&:nth-child(7)
+			+animation-delay(.3s)
+		&.active
+			color: $accentColor
+			font:
+				weight: 600
+		.nav__item-link
+			color: inherit
+			display: block
+			text-transform: uppercase
+			text-decoration: none
+			font:
+				size: 12px
+				weight: inherit
+			outline: none
+			padding: 20px 0
+			letter-spacing: 0.15em
+			&:hover
+				transition: all .3s ease-in-out
+				color: $accentColor
+
+// toogle button settings
+.button_toogle-wrap
+	position: fixed
+	top: 15px
+	right: 20px
+	width: 50px
+	height: 40px
+	padding: 0 5px
+	border-radius: 5px
+	transition: all .3s ease-in-out
+	z-index: 50
+	&:hover
+		background-color: $accentColor
+
+.toogle_menu
+	width: 40px
+	height: 40px
+	z-index: 100
+	border: none
+	padding: 0
+	background-color: transparent
+	cursor:pointer
+	span
+		display: block
+$w: 28px
+$h: 3px
+.sandwich 
+	width: $w
+	height: 30px
+	position: absolute
+	top: 8px
+	bottom: 0
+	left: 0
+	right: 0
+	margin: auto
+	z-index: 200
+.sw-topper
+	position: relative
+	top: 0
+	width: $w 
+	height: $h
+	background: $mainColor
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	display: block
+	//transition-delay: 0.2s, 0s
+.sw-bottom
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 2.2
+	background: $mainColor
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	transition-delay: 0.2s, 0s
+.sw-footer
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 4.5
+	background: $mainColor
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: all 0.5s
+	transition-delay: 0.1s
+.sandwich.active
+	cursor:pointer
+	.sw-topper
+		top: 9px
+		transform: rotate(-45deg)
+	.sw-bottom
+		top: 6px
+		transform: rotate(45deg)
+	.sw-footer
+		opacity: 0
+		top: 0
+		transform: rotate(180deg)
+
+
+
+

@@ -1,0 +1,73 @@
+// Feature section
+.features-item
+	padding: 25px 35px
+
+	&:hover
+		background-color: $accentColor
+		transition: all .3s ease-in-out
+
+	&:hover .features-discr, &:hover .features-title, &:hover i
+		color: $titleColor
+		transition: all .3s ease-in-out
+
+.features-title 
+	padding-bottom: 20px
+	color: $secondColor
+	text-transform: uppercase
+	text-align: center
+	font: 
+		size: 1.3em
+		weight: 600
+	letter-spacing: -.5px
+	i
+		padding-left: 20px
+		color: $secondColor
+		font-size: 1.5em
+.features-discr
+	line-height: 1.5em
+	color: $mainColor
+
+.features-image
+	margin: 50px 0
+	img
+		margin: 0 auto
+
+// Explain section
+.features__explain-wrap
+	background: 
+		image: url("../img/bgFeatures.jpg")
+		size: cover
+		repeat: no-repeat
+		position: center center
+
+.features__explain-bg
+	background-color: rgba(0,0,0,.8)
+	width: 100%
+	height: 100%
+
+.features__explain-content
+	z-index: 1
+		
+.features__explain-discr
+	padding: 30px 100px
+	text-align: center
+	color: $titleColor
+
+.features__explain-submit
+	text-align: center
+	padding-bottom: 60px
+	button
+		width: 130px
+		padding: 10px 0
+		color: $titleColor
+		letter-spacing: 0.07em
+		text-transform: uppercase
+		border: none
+		background-color: rgba(255,255,255,.1)
+		border-radius: 3px
+		cursor: pointer
+		transition: all .1s
+		&:hover
+			background-color: $accentColor
+		&:first-child
+			margin-right: 10px

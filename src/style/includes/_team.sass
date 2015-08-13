@@ -1,0 +1,94 @@
+.team
+	padding-bottom: 50px
+.team-wrap
+	position: relative
+
+.team__slider-wrap
+	width: 80%
+	overflow: hidden
+	margin: 0 auto
+
+.team__slider-item
+	padding-bottom: 30px
+.team__slider-img
+	position: relative
+	&:hover .team__slider-hover
+		opacity: 1
+		transition: all .3s ease-in-out
+	&:hover .team__slider-title
+		background-color: transparent
+		transition: all .3s ease-in-out
+
+.team__slider-title
+	position: absolute
+	bottom: 0
+	width: 100%
+	background-color: rgba(0,0,0,.3)
+	padding: 5px 10px
+	.team-name
+		color: $titleColor
+		font:
+			size: 1em
+			weight: 600
+	.team-status
+		color: darken($titleColor, 5%)
+
+.team__slider-hover
+	position: absolute
+	top: 0
+	left: 0
+	background-color: rgba(255,0,0,.2)
+	width: 100%
+	height: 100%
+	opacity: 0
+
+.team__slider-hover--wrap
+	position: absolute
+	top: 50%
+	left: 50%
+	margin-left: -40px
+	margin-top: -40px
+	width: 80px
+	height: 80px
+	a
+		display: inline-block
+		text-align: center
+		width: 32px
+		height: 32px
+		margin: 3px
+		padding: 5px
+		background-color: lighten($mainColor, 50%)
+		i
+			font-size: 1.6em
+			color: lighten($mainColor, 30%)
+		&:hover i
+			color: $linkColor
+
+// Slider navigarion
+.ctr-wrap
+	button
+		width: 30px
+		height: 30px
+		position: absolute
+		top: 50%
+		background-color: $accentColor
+		text-align: center
+		border: none
+		margin-top: -30px
+		outline: none
+		i
+			color: $mainColor
+			font-size: 2em
+		&:hover i
+			color: $titleColor
+			transition: all .2s ease-in-out
+	.ctr-next
+		right: 0
+		&:hover i
+			padding-left: 3px
+	.ctr-prev
+		left: 0
+		&:hover i
+			padding-right: 3px
+
+
